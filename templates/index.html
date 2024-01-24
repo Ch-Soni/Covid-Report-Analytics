@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Covid India</title>
+  <link rel="stylesheet" href="./static/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="box-container">
+      <h3>Covid 19 Data Analysis</h3>
+
+      <form action="{{ url_for('covid_analytics') }}" method="post">
+        <div class="input-container">
+          <div class="date-container">
+
+            <div class="input-field">
+              <label for="start-date">Pick a starting date:</label>
+              <input type="date" name="start-date" value="">
+            </div>
+
+            <div class="input-field">
+              <label for="end-date">Pick an end date:</label>
+              <input type="date" name="end-date" value="">
+            </div>
+
+
+          </div>
+            <button class="btn">submit</button>
+            
+        </div>
+      </form>
+
+    </div>
+  </div>
+</body>
+
+</html>

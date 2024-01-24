@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>landing page </title>
+    <!-- <link rel="stylesheet" href="./static/landing_page.css"> -->
+
+    <style media="screen">
+
+      .charts img{
+        width: 80%;
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin-bottom: 25px;
+      }
+      .charts .piechart {
+        width: 50%;
+      }
+
+      .heading h1{
+        text-align: center;
+        padding-top: 40px;
+        padding-bottom: 30px;
+        color: #ff5050;
+      }
+
+      body {
+        padding: 20px;
+      }
+      .stats h3 {
+        padding-left: 30px;
+      }
+      .stats #line1 {
+        color: red;
+      }
+      .stats #line2 {
+        color: orange;
+      }
+      .stats #line3 {
+        color: green;
+      }
+
+    </style>
+
+
+  </head>
+  <body>
+
+    <div class="heading">
+      <h1><u>Covid Analytics Report from {{S_date}} to {{E_date}}</u></h1>
+    </div>
+    <div class="stats">
+      <h2>Statastics of Covid in India:</h2>
+      <p><h3 id="line1">Total Number of Deaths till {{E_date}}: {{Death}}</h3></p>
+      <p><h3 id="line2">Total Number of Confirmed cases till {{E_date}}: {{Confirmed}}</h3></p>
+      <p><h3 id="line3">Total Number of Confirmed cases that has been cured till {{E_date}}: {{Cured}}</h3></p>
+    </div><br><br>
+
+    <div class="charts">
+      <h2>Data Visualization: </h2>
+      <div class="chart">
+        <h3>Piechart:</h3>
+        <img class="piechart"  src="data:image/png;base64, {{Piechart}}">
+        <h3>Maximum number of cases:</h3>
+        <img src="data:image/png;base64, {{MaxCase}}">
+        <h3>Lowest number of cases:</h3>
+        <img src="data:image/png;base64, {{LowestCase}}">
+      </div>
+
+      <div class="highest_impact">
+       <h3>Highest Impact</h3>
+       <h4>Total number of Confirmed Cases:</h4>
+       <img src="data:image/png;base64, {{HighImpactConfirmed}}" >
+       <h4>Total number of Deaths reported:</h4>
+       <img src="data:image/png;base64, {{HighImpactDeath}}" >
+       <h4>Total number of Cured Cases:</h4>
+       <img src="data:image/png;base64, {{HighImpactCured}}" >
+
+      </div>
+    </div>
+
+  </body>
+</html>

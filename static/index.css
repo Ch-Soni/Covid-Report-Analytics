@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("https://img.freepik.com/free-vector/realistic-coronavirus-background_1393-279.jpg?w=1380&t=st=1680348306~exp=1680348906~hmac=d12ceca4959b8e2660e06a89e8e6b5c59c2e6cbb139f8a4a28a31f7ca4975a14");
+  /* background-image: url("https://www.who.int/health-topics/coronavirus#tab=tab_1"); */
+  background-color: rgba(0, 0, 0, 1);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h3 {
+  font-family: 'Mochiy Pop One', sans-serif;
+  background-color: rgba(231, 70, 70, 0.7);
+  border-radius: 10px;
+  color: white;
+  padding: 5px;
+}
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-container {
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 500px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.input-container {
+  width: 100%;
+  height: 100%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.date-container {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.input-field {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  margin: 5px;
+}
+
+label {
+  font-weight: bolder;
+}
+
+.btn {
+  border: 1px solid black;
+  border-radius: 10px;
+  width: fit-content;
+  margin-top: 60px;
+  padding: 8px;
+  cursor: pointer;
+}
+/* .btn :hover {
+  background-color: orange;
+} */
