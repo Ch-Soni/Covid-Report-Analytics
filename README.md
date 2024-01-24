@@ -1,2 +1,4 @@
 # Covid-Report-Analytics
- The project utilizes HTML and CSS for a user-friendly frontend, Flask as a lightweight backend framework, and Pandas for efficient data processing, enabling dynamic COVID-19 data visualization and analysis.
+ Pre-requisites for running the zip file (install if not installed): flask, pandas, matplotlib, seaborn, IPython.
+ Ensure that the date falls between 30:01:2020 and 11:08:2021, else an error will be generated since the record is from 30:01:2020 to 11:08:2021. 
+  
